@@ -1,0 +1,42 @@
+<div class="duration-component">
+  <form class="duration-form" (ngSubmit)="search()">
+
+    <button type="submit" class="btn search-button">Search</button>
+    <div class="inputs-container">
+      <div class="origins form-element">
+        <div class="from label">From</div>
+        <div class="origin" *ngFor="let origin of origins; let i = index">
+          <label>
+            <input [(ngModel)]="origin.name"
+                   [ngModelOptions]="{standalone: true}"
+                   (ngModelChange)="addLocation('origins')">
+          </label>
+        </div>
+      </div>
+      <span class="arrow"></span>
+      <div class="destinations form-element">
+        <div class="to label">To</div>
+        <div class="destination" *ngFor="let destination of destinations; let i = index">
+          <label>
+            <input [(ngModel)]="destination.name"
+                   [ngModelOptions]="{standalone: true}"
+                   (ngModelChange)="addLocation('destinations')">
+          </label>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="connections" *ngIf="connections.length">
+    <div class="connection" *ngFor="let connection of connections">
+      <div class="locations-info">
+        <span class="connection-text from">From: {{connection.from}}</span>
+        <span class="arrow"></span>
+        <span class="connection-text to">To: {{connection.to}}</span>
+      </div>
+      <div class="distance-info">
+        <span class="distance">{{connection.distance.text}}</span>
+        <span class="duration">{{connection.duration.text}}</span>
+      </div>
+    </div>
+  </div>
+</div>

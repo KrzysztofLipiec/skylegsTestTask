@@ -1,0 +1,42 @@
+{
+  "name": "angular-io-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Example project from an angular.io guide.",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "lint": "tslint ./src/**/*.ts -t verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/animations": "~5.0.0",
+    "@angular/common": "~5.0.0",
+    "@angular/compiler": "~5.0.0",
+    "@angular/compiler-cli": "~5.0.0",
+    "@angular/core": "~5.0.0",
+    "@angular/forms": "~5.0.0",
+    "@angular/http": "~5.0.0",
+    "@angular/platform-browser": "~5.0.0",
+    "@angular/platform-browser-dynamic": "~5.0.0",
+    "@angular/platform-server": "~5.0.0",
+    "@angular/router": "~5.0.0",
+    "@angular/upgrade": "~5.0.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.5.0",
+    "web-animations-js": "^2.3.1",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@angular/cli": "1.5.0",
+    "@types/node": "^6.0.45",
+    "lodash": "^4.16.2",
+    "less": "*",
+    "ts-node": "^3.3.0",
+    "tslint": "^3.15.1",
+    "typescript": "2.4.2"
+  },
+  "repository": {}
+}

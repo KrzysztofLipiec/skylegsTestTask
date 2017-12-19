@@ -1,0 +1,90 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: #111111;
+  background: url('http://hdwallpaperfx.com/wp-content/uploads/2015/11/in-the-sky-the-plane-flies.jpg');
+}
+.content {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  position: absolute;
+}
+.duration-component {
+  background: rgba(150, 150, 150, 0.4);
+  padding: 1px 0;
+}
+.duration-component .arrow {
+  background-image: url('https://svn.apache.org/repos/asf/openoffice/symphony/trunk/main/extras/source/gallery/arrows/A03-Arrow-Gray-Left.png');
+  width: 100px;
+  height: 58px;
+  float: left;
+  flex-shrink: 0;
+  display: inline-block;
+  background-size: cover;
+  transform: rotateZ(180deg);
+}
+.duration-component .duration-form {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.duration-component .duration-form .inputs-container {
+  display: flex;
+  justify-content: space-between;
+}
+.duration-component .duration-form .inputs-container .arrow {
+  margin-top: 20px;
+}
+.duration-component .duration-form .inputs-container .form-element {
+  margin: 5px 10px;
+  width: 100%;
+}
+.duration-component .duration-form .inputs-container .form-element input {
+  width: 90%;
+  padding: 2px 5px;
+}
+.duration-component .duration-form .inputs-container .form-element .label {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.duration-component .connections {
+  border-top: #888888 solid 1px;
+  padding: 10px 20px;
+}
+.duration-component .connections .connection {
+  background: rgba(100, 100, 100, 0.4);
+  padding: 5px 0;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.duration-component .connections .connection .locations-info {
+  overflow: hidden;
+}
+.duration-component .connections .connection .locations-info .connection-text {
+  font-size: 22px;
+  float: left;
+  margin-top: 17px;
+  margin-left: 10px;
+  width: 250px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.duration-component .connections .connection .distance-info {
+  text-align: center;
+}
+.duration-component .btn {
+  padding: 11px;
+  font-size: 20px;
+  color: #111111;
+  background: rgba(100, 100, 100, 0.4);
+}

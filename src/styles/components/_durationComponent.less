@@ -1,0 +1,73 @@
+.duration-component {
+  background: rgba(150, 150, 150, 0.4);
+  padding: 1px 0;
+  .arrow {
+    background-image: url('https://svn.apache.org/repos/asf/openoffice/symphony/trunk/main/extras/source/gallery/arrows/A03-Arrow-Gray-Left.png');
+    width: 100px;
+    height: 58px;
+    float: left;
+    flex-shrink: 0;
+    display: inline-block;
+    background-size: cover;
+    transform: rotateZ(180deg);
+  }
+  .duration-form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    .inputs-container {
+      display: flex;
+      justify-content: space-between;
+      .arrow {
+        margin-top:20px;
+      }
+      .form-element {
+        margin: 5px 10px;
+        width: 100%;
+        input {
+          width: 90%;
+          padding: 2px 5px;
+        }
+        .label {
+          text-align: center;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .connections {
+    border-top: #888888 solid 1px;
+    padding: 10px 20px;
+    .connection {
+      background: rgba(100, 100, 100, 0.4);
+      padding: 5px 0;
+      border-radius: 4px;
+      margin-top: 5px;
+      .locations-info {
+        overflow: hidden;
+
+        .connection-text {
+          font-size: 22px;
+          float: left;
+          margin-top: 17px;
+          margin-left: 10px;
+          width: 250px;
+          display: inline-block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .distance-info {
+        text-align: center;
+      }
+    }
+  }
+  .btn {
+    padding: 11px;
+    font-size: 20px;
+    color: #111111;
+    background: rgba(100, 100, 100, 0.4);
+  }
+}
